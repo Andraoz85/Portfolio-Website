@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #171212;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://img.freepik.com/free-vector/ai-technology-brain-background-vector-digital-transformation-concept_53876-117817.jpg?w=1380&t=st=1693781317~exp=1693781917~hmac=91aacc43d953730ff4aedb769bccf96e5eff20a755e118808fdecd992f6c7a94);
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: cenrter;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #030101;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #530d23;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+#profile-picture {
+  width: 200px; /* Adjust as needed */
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 10px; /* Space between the image and header-text */
+  opacity: 0.8;
+}
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h2 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h2 span {
+  color: #660707;
+}
+/* ---------------about------------- */
+#about{
+  padding: 80px 0;
+  color: #ababab;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
